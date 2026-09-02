@@ -8,9 +8,37 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
-        header { background: #15803d; color: white; padding: 1.2rem 1.5rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .logo { font-size: 1.3rem; font-weight: 700; }
-        nav a { color: #dcfce7; text-decoration: none; margin-left: 1rem; font-size: 0.9rem; font-weight: 500; }
+        header {
+    background: #15803d;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+nav a {
+    color: #dcfce7;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
         .hero { background: linear-gradient(135deg, #166534 0%, #15803d 100%); color: white; padding: 4rem 1.5rem; text-align: center; }
         .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
         .hero p { font-size: 1rem; max-width: 650px; margin: 0 auto 1.5rem; opacity: 0.95; }
