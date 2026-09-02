@@ -1,39 +1,88 @@
-Shri Bio CNG
-AboutProcessBenefitsContact
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Bio CNG | Clean Energy Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
+        header { background: #15803d; color: white; padding: 1.2rem 1.5rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.3rem; font-weight: 700; }
+        nav a { color: #dcfce7; text-decoration: none; margin-left: 1rem; font-size: 0.9rem; font-weight: 500; }
+        .hero { background: linear-gradient(135deg, #166534 0%, #15803d 100%); color: white; padding: 4rem 1.5rem; text-align: center; }
+        .hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1rem; max-width: 650px; margin: 0 auto 1.5rem; opacity: 0.95; }
+        .btn { display: inline-block; background: #22c55e; color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.2rem; }
+        .section-title { text-align: center; font-size: 1.6rem; color: #166534; margin-bottom: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07); border-top: 4px solid #16a34a; }
+        .card h3 { color: #1e293b; margin-bottom: 0.5rem; font-size: 1.15rem; }
+        .steps { counter-reset: step; list-style: none; }
+        .steps li { background: white; margin-bottom: 1rem; padding: 1.2rem 1.2rem 1.2rem 3.5rem; border-radius: 8px; position: relative; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+        .steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 1.2rem; top: 1.2rem; width: 26px; height: 26px; background: #22c55e; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.85rem; }
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 2.5rem 1.2rem; margin-top: 3rem; }
+        footer p { margin-bottom: 0.5rem; font-size: 0.9rem; }
+        footer a { color: #4ade80; text-decoration: none; }
+    </style>
+</head>
+<body>
 
-Shri Bio CNG
-Waste to Energy, Clean Energy for a Better Future.
-Bio-waste को उपयोगी ऊर्जा में बदलने की दिशा में एक sustainable और future-ready solution.
-Project Enquiry जानिए कैसे काम करता है
-Shri Bio CNG के बारे में
-Shri Bio CNG का उद्देश्य organic waste और agricultural waste से clean, renewable energy solutions को बढ़ावा देना है।
+    <header>
+        <div class="logo">🌱 Shri Bio CNG</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-🌱
-Renewable Energy
-Biomass और organic waste से renewable gas production की दिशा में समाधान।
+    <section class="hero">
+        <h1>Shri Bio CNG</h1>
+        <p>Waste to Energy, Clean Energy for a Better Future.<br>Bio-waste को उपयोगी ऊर्जा में बदलने की दिशा में एक sustainable और future-ready solution.</p>
+        <a href="#contact" class="btn">Project Enquiry</a>
+    </section>
 
-♻️
-Waste to Energy
-कृषि अवशेष, गोबर और अन्य suitable organic feedstock का बेहतर उपयोग।
+    <div class="container" id="about">
+        <h2 class="section-title">Shri Bio CNG के बारे में</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🌱 Renewable Energy</h3>
+                <p>Biomass और organic waste से clean, renewable gas production की दिशा में प्रभावी समाधान।</p>
+            </div>
+            <div class="card">
+                <h3>♻️ Waste to Energy</h3>
+                <p>कृषि अवशेष, गोबर और अन्य suitable organic feedstock का वैज्ञानिक और बेहतर उपयोग।</p>
+            </div>
+            <div class="card">
+                <h3>🏭 Plant Solutions</h3>
+                <p>Bio CNG/CBG project planning, technology और plant setup के लिए संपूर्ण मार्गदर्शन।</p>
+            </div>
+        </div>
+    </div>
 
-🏭
-Plant Solutions
-Bio CNG/CBG project planning, technology और plant development से जुड़ी जानकारी।
-Bio CNG Plant कैसे काम करता है?
-एक सामान्य प्रक्रिया में organic feedstock को anaerobic digestion के माध्यम से biogas में बदला जाता है और फिर purification/upgrading के बाद compressed renewable gas तैयार की जाती है।
+    <div class="container" id="process">
+        <h2 class="section-title">Bio CNG Plant कैसे काम करता है?</h2>
+        <ol class="steps">
+            <li><strong>Feedstock:</strong> उपयुक्त जैविक कचरे और गोबर को एकत्र करके digester में डाला जाता है।</li>
+            <li><strong>Anaerobic Digestion:</strong> Controlled anaerobic digester में organic matter से raw biogas का उत्पादन होता है।</li>
+            <li><strong>Biogas Upgrading:</strong> Gas को purify करके methane-rich compressed bio-gas (CBG) तैयार की जाती है।</li>
+            <li><strong>Compression:</strong> गैस को आवश्यक दबाव पर सिलेंडरों या ग्रिड में भरने के लिए compress किया जाता है।</li>
+            <li><strong>Bio-Fertilizer:</strong> Digestion के बाद बचे हुए slurry/digestate को organic खाद के रूप में उपयोग किया जाता है।</li>
+        </ol>
+    </div>
 
-1. Feedstock
-Suitable organic waste को collect और prepare किया जाता है।
+    <footer id="contact">
+        <p><strong>Bio CNG / CBG Plant project enquiry:</strong></p>
+        <p>📞 Contact: <a href="tel:+919876543210">+91-XXXXXXXXXX</a> | ✉️ Email: <a href="mailto:niteshmaheshwari2601@gmail.com">niteshmaheshwari2601@gmail.com</a></p>
+        <p>📍 Location: Indore (M.P.)</p>
+        <p style="margin-top: 1.2rem; font-size: 0.8rem;">© 2026 Shri Bio CNG. All Rights Reserved.</p>
+    </footer>
 
-
-2. Anaerobic Digestion
-Controlled digester में organic matter से biogas produce होती है।
-
-
-3. Gas Upgrading
-Biogas को purify/upgrading करके methane-rich gas तैयार की जाती है।
-
-
+</body>
+</html>
 4. Compression
 Gas को आवश्यक standards के अनुसार compress और store किया जाता है।
 
